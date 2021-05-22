@@ -1,5 +1,5 @@
 window.onload = function () {
-    var desc = ["안녕하세요? 김형준 입니다.", 
+    var desc = [document.getElementById('book1_desc').innerText, 
     "저는 문산수억고 학생입니다.", 
     "잘 부탁드립니다.",
     "굿"];
