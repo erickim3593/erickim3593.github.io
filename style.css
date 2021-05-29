@@ -19,6 +19,10 @@ div.navigation {
 
     display: flex;
     flex-direction: row;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 div.navigation button {
@@ -224,6 +228,8 @@ div.card-history {
     flex-direction: row;
     background-color: white;
     height: fit-content;
+
+    margin-bottom: 20px;
 }
 
 .article-img-container {
@@ -251,6 +257,67 @@ div.card-history {
     float: right;
     margin-top: 10px;
 }
+
+.article-img {
+    width: fit-content;
+    height: fit-content;
+}
+
+.article-img #leftimg {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+}
+
+.article-img #rightimg{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-bottom-right-radius: 20px;
+}
+
+.article-section {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+
+.article-wrapper {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    box-shadow: 2px 1px 5px 0px #aaaaaa;
+}
+
+.article-subtitle {
+    border-bottom: #aaaaaa solid 1px;
+}
+
+.article-body {
+    padding-top: 15px;
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+.article-desc {
+    line-height: 160%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.article-desc br {
+    display: none;
+}
+
+
 
 
 
